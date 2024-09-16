@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav class="container text-center d-flex justify-content-center align-items-center flex-wrap">
+        <ul class="row textcenter">
+            <li class="textwarning w-25 text-center mx-2"><a href="index.html">Home</a></li>
+            <li class="textwarning w-25 text-center mx-2"><a href="about.html">About</a></li>
+            <li class="textwarning w-25 text-center mx-2"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>    
+  </header>
+
+  <!-- Main Content -->
+  <div class="">
+    <div class="">
+        <div class="bg-dark-subtle px-3">
+            <h1>I'm Luis</h1>
+            <br>
+            <p>I focus on creating cohesive, coherent, and intuitive digital experiences. My background in architecture gives me a unique edge in spatial and visual organization. I thrive on solving user problems with tools like Figma, Figjam, and Adobe Creative Suite, as well as user research, wireframing, prototyping, and usability testing.</p>
+            <button>Resume</button>
+        </div>
+        <h2>Projects</h2>
+    </div>
+  </div>  
+
+  <!-- Hero Section (added after the previous content) -->
+  <div class="hero">
+    <img src="media/desktop.png" alt="Hero Image"> <!-- Add your image source here -->
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1 class="display-4">Orphaned Starfish Foundation Re Design</h1>
+        <p class="lead">The website was somewhat outdated and lacked a defined brand palette, making it less visually appealing. Our research and user testing revealed that users were frustrated by the limited payment options for donations. Our objective was to design a compelling homepage that evokes emotion, boosts donations, and provides clear transparency on how each contribution supports orphans, while offering multiple payment methods.</p>
+    </div>
+  </div>
+  <div class="card">
+    <h5 class="card-header">Phase 1</h5>
+    <div class="card-body">
+      <h5 class="card-title">Research</h5>
+      <p class="card-text">Our user research and stakeholder interviews revealed that the top priority for stakeholders was to increase donations, while users expressed a desire for more payment options to facilitate their contributions. To gather these insights, we developed interview plans, conducted interviews with both users and stakeholders, and distributed surveys.</p>
+    </div>
+  </div>
+  <div class="card">
+    <h5 class="card-header">Phase 2</h5>
+    <div class="card-body">
+      <h5 class="card-title">Ideation Phase</h5>
+      <p class="card-text">We analyzed user insights by graphing data, constructing an empathy map, and building an affinity diagram. We developed user and proto personas, identified key insights, defined main features, and crafted problem statements and value propositions. Subsequently, we designed a user journey map, user flow, and storyboard.</p>
+    </div>
+    <img src="media/interviewInsight.png" class="card-img-bottom" alt="...">
+  </div>
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
